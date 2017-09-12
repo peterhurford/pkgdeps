@@ -54,7 +54,8 @@ get_deps_data("testthat")
 This can be useful for getting data on all your dependencies (such as licenses):
 
 ```R
-devtools::install_github("robertzk/recombinator")  # Recombinator package turns nested lists to dataframes.
+if (!require(devtools)) { install.packages("devtools"); library(devtools) }
+install_github("robertzk/recombinator")  # Recombinator package turns nested lists to dataframes.
 library(recombinator)
 deps_df <- recombinator(get_deps_data(get_deps("testthat", suggests = TRUE, recursive = TRUE)))
 head(deps_df)
@@ -70,3 +71,13 @@ write.csv(deps_df, "deps.csv")
 ```
 
 (Ironically, this does not yet work for the `pkgdeps` package itself, because it is not yet on CRAN.)
+
+
+### Installation
+
+Because this package is not yet on CRAN, it must be installed via devtools:
+
+```R
+if (!require(devtools)) { install.packages("devtools"); library(devtools) }
+install_github("peterhurford/pkgdeps")
+```
