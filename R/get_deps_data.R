@@ -1,3 +1,6 @@
+#' Get package data (name, version, license) for given dependencies.
+#' @param pkgs character. A character vector of package names to fetch data for.
+#' @return a list of named lists containing package name, version, and license for each package.
 #' @export
 get_deps_data <- function(pkgs) {
   package_df <- as.data.frame(package_data())
