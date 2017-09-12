@@ -1,5 +1,5 @@
 Package: pkgdeps
-Title: Find dependencies for R packages the easy way.
+Title: Find CRAN dependencies for R packages the easy way.
 Version: 0.0.0.9000
 Authors@R: person("Peter", "Hurford", email = "peter@peterhurford.com", role = c("aut", "cre"))
 Description: Look through all dependencies of R packages, find them, and topologically sort them.
