@@ -8,6 +8,5 @@ This is useful for knowing what not to try to install or uninstall.}
 base_packages()
 }
 \description{
-A list of all the base packages.
-This is useful for knowing what not to try to install or uninstall.
+From https://github.com/wch/r-source/tree/trunk/src/library
 }
